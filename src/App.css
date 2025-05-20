@@ -1,0 +1,26 @@
+@import "tailwindcss"; 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*body{
+    background-image: url('../public/2206_w019_n002_621b_p15_621.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}*/
+#container{
+    background-image: url('/public/perfil.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}
+
+

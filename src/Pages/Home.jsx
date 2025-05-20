@@ -1,0 +1,48 @@
+import { Image } from 'primereact/image';
+import { Button } from 'primereact/button';
+
+const Home = () => {
+    return (
+        <div className="flex flex-col md:flex-row justify-between gap-6 p-4">
+            
+           
+            <div className="flex-1 bg-indigo-300 border-b-8 border-black rounded-[5px_60px_5px_5px] p-6">
+                <h1 className="text-xl">Olá, eu sou a</h1>
+                <h1 className="text-3xl font-bold text-white">Mariana Santos ;)</h1>
+                <h3 className="mt-2 text-lg">Economista e estudante de desenvolvimento Full-Stack</h3>
+                <p className="mt-4 text-justify">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos labore ullam, repudiandae fugit vero tempora aspernatur natus tempore laudantium at eum, reprehenderit ex quasi corporis, eos dolorum saepe eveniet. Est.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eius dolore architecto repudiandae ullam consequatur consequuntur ratione labore, perspiciatis qui nihil tenetur, vero sed. Ipsam natus aliquid animi amet doloribus?
+                </p>
+                <div className="mt-6">
+                    <Button
+                        label="Entre em Contato"
+                        rounded
+                        link
+                        onClick={() => window.open('mailto:mariihsantos20@gmail.com', '_blank')}
+                        className="bg-yellow-300 text-900 px-6 py-3 font-semibold"
+                        style={{
+                            borderRadius: '50px',
+                            borderBottom: '3px solid black',
+                        }}
+                    />
+                </div>
+            </div>
+
+            
+            <div className="flex-1 flex items-center justify-center bg-yellow-300 border-b-8 border-black rounded-[5px_60px_60px_60px] p-4">
+                <div className="bg-white p-3 rounded-[5px_60px_60px_60px] shadow-md">
+                    <Image
+                        src="public/9a46a621-66c6-4b9f-915f-107ead0d17ee.png"
+                        alt="Mariana"
+                        className="max-w-full h-auto object-cover rounded-xl"
+                        width="250"
+                    />
+                </div>
+            </div>
+
+        </div>
+    );
+};
+
+export default Home;
